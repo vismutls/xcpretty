@@ -1,4 +1,4 @@
-__NOTE__: This fork adds the ability to suppress warnings by adding the environment variable `XCPRETTY_INHIBIT_WARNINGS=true`. It is based on the `https://github.com/woodcockjosh/xcpretty` fork, but also suppresses `ld` warnings.
+__NOTE__: This fork adds the ability to suppress warnings by adding the environment variable `XCPRETTY_INHIBIT_WARNINGS=true`. It is based on the https://github.com/woodcockjosh/xcpretty fork, but also suppresses `ld` warnings.
 
 
 ![logo](http://i.imgur.com/i2fElxx.png)
