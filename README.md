@@ -1,3 +1,6 @@
+__NOTE__: This fork adds the ability to suppress warnings by adding the environment variable `XCPRETTY_INHIBIT_WARNINGS=true`. It is based on the `https://github.com/woodcockjosh/xcpretty` fork, but also suppresses `ld` warnings.
+
+
 ![logo](http://i.imgur.com/i2fElxx.png)
 
 __`xcpretty` is a fast and flexible formatter for `xcodebuild`__.<br/>
@@ -10,7 +13,8 @@ It does one thing, and it should do it well.
 
 ## Installation
 ``` bash
-$ gem install xcpretty
+$ gem build
+$ gem install xcpretty-0.3.2.gem
 ```
 
 ## Usage
@@ -42,6 +46,12 @@ output.
 Here's a way of doing it:
 ``` bash
 $ xcodebuild [flags] | tee xcodebuild.log | xcpretty
+```
+
+## Inhibit warnings
+Add to enviroment variables:
+```bash
+$ export XCPRETTY_INHIBIT_WARNINGS=true
 ```
 
 ## Formats

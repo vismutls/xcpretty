@@ -371,7 +371,7 @@ module XCPretty
       when GENERATE_DSYM_MATCHER
         formatter.format_generate_dsym($1)
       when LD_WARNING_MATCHER
-        formatter.format_ld_warning($1 + $2)
+        formatter.format_ld_warning($1 + $2) unless should_inhibit_warnings
       when LD_ERROR_MATCHER
         formatter.format_error($1)
       when LIBTOOL_MATCHER
